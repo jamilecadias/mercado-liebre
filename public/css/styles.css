@@ -207,6 +207,7 @@ main.register {
     align-items: center;
     text-align: center;
     max-width: 40vw;
+    margin-top: 10px;
     
 }
 
@@ -318,6 +319,7 @@ section.registerform .birth-date {
 
  main.login input.button {
     width: 40vw;
+    margin-bottom: 15px;
 
  }
 
