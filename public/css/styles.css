@@ -16,8 +16,7 @@ header{
     background-color: #EAC926;
 }
 
-header div.logo,
-header .form{
+header div.logo{
     width: 50%;
 }
 
@@ -25,25 +24,34 @@ header div.logo{
     padding: 10px;
 }
 
+.logo-img {
+    width: 200px; 
+    height: auto; 
+}
+
 header nav{
-    font-size: 12px;
     margin-left: 20px;
     display: none;
     justify-content: space-between;
-   }
+}
 
 header ul {
     display: flex;
     justify-content: space-around;
 }
+
 header ul li{
     list-style-type: none;
     padding: 5px;
 }
 
-header ul li a{
+.instalments, header ul li a {
     text-decoration: none;
-    color: #000;
+    color: rgba(17, 16, 16, 0.6);
+    line-height: 18px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 15px;
 }
 
 header .form{
@@ -52,10 +60,40 @@ header .form{
     padding: 0 20px;
     
 }
+header .form .search-container {
+    display: flex;
+    align-items: center;
+  }
 
-form.buscar {
-    border: solid black 1px;
+header .form .input {
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    outline: none;
+    color: #666;
     padding: 2px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  header .form .input input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width:340px;
+    height: 40px;
+  }
+
+header .form .input .boton {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+header .form .input .search-button {
+    border-radius: 0 5px 5px 0;
 }
 
 header .form .submit{
@@ -330,6 +368,10 @@ section.registerform .birth-date {
     background: rgb(240, 243, 245);
     border:1px solid #1259c3; 
 }
+
+.offers{
+    margin-bottom: 40px;
+}
  
 
 /* FOOTER */
@@ -342,26 +384,50 @@ footer{
 }
 
  .footer {
-     margin-bottom: 30px;
-     }
+margin-bottom: 30px;
+display: flex;
+justify-content: center;
+}
+
+.cards_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_card, .footer_gift, .footer_shield{
+    width: 350px;
+    padding:20px;
+}
 
  .footer_title {
-     font-size: 16px;
+     font-size: 18px;
+     margin-bottom: 10px;
+     
  }
 
  .footer_text {
-     font-size: 12px;
+     font-size: 14px;
+     line-height: 18px;
+     text-align: justify;
+     margin-bottom: 15px;
     }
 
     .footer_icon {
         font-size: 2em;
         line-height: 10px;
         color: #03264C;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     .footer_icon:hover {
         color:#0044AA;
+    }
+    .footer_link{
+    color: #3483fa;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
     }
 
     .copyright {
