@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
 /* HEADER */
 header div.top-header p{
     width: 100%;
@@ -120,11 +125,6 @@ div.burger-menu i{
 
 /* MAIN */
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
-}
-
 h3{
     font-size: 24px;
 }
@@ -205,6 +205,14 @@ main section h3{
     margin: 20px 0px;
 }
 
+main section div.products article i{
+    transition: transform 1s;
+}
+
+main section div.products article:hover i{
+    transform: rotate(-90deg);
+}
+
 article div.main-article{
     width: 100%;
     display: flex;
@@ -214,7 +222,6 @@ article div.main-article{
     position: relative;
     padding: 15px;
 }
-
 
 main.login {
     display: flex;
@@ -231,6 +238,48 @@ main.login form {
     
 }
 
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main section article:hover .description{
+    display: block;
+}
+
+.login input[type='submit']:hover,
+.register input[type='submit']:hover{
+    background-color: #0022AA;
+}
+
+@media (min-width: 361px){
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+}
+/*REGISTER LOGIN*/
+
+.login-title, .register-title, .register-subtitle{
+    color: #666;
+    margin-top: 20px;
+}
 .login input {
     padding: 10px;
     width: 40vw;
@@ -354,7 +403,7 @@ section.registerform .birth-date {
      margin: 0 10px;
 
  }
-
+/*LOGIN*/
  main.login input.button {
     width: 40vw;
     margin-bottom: 15px;
